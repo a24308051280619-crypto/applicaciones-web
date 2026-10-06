@@ -1,0 +1,89 @@
+<!--perez linares valentin / 5°I / 0619-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>The New York Times - Simplificado</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        header { text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; }
+        nav { text-align: center; border-bottom: 1px solid #ccc; padding: 10px 0; }
+        nav a { margin: 0 10px; text-decoration: none; color: #000; font-weight: bold; }
+        main { display: flex; gap: 20px; margin-top: 20px; }
+        section { flex: 2; }
+        aside { flex: 1; background: #f9f9f9; padding: 15px; border: 1px solid #ddd; }
+        
+        /* Estilo para ajustar la imagen */
+        .noticia-imagen { width: 100%; height: auto; border-radius: 4px; margin-bottom: 10px; }
+        
+        form label { font-size: 0.85em; font-weight: bold; display: block; margin-top: 8px; }
+        form input, form select, form textarea, form button { width: 100%; margin-top: 4px; margin-bottom: 10px; padding: 8px; box-sizing: border-box; }
+        form textarea { resize: vertical; height: 80px; }
+        form button { background: #000; color: #fff; border: none; cursor: pointer; font-weight: bold; }
+        form button:hover { background: #333; }
+        footer { text-align: center; margin-top: 30px; border-top: 1px solid #ccc; padding-top: 10px; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The New York Times</h1>
+        <p>FORMULARIO</p>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Mundo</a>
+        <a href="#">Negocios</a>
+        <a href="#">Opinión</a>
+        <a href="#">Cocina</a>
+    </nav>
+
+    <main>
+        <section>
+            <article>
+                <h2>Noticia Principal del Día</h2>
+                <!-- Imagen agregada -->
+                <img src="ja.jpg" alt="Presentador de Noticias Pez" class="noticia-imagen">
+                <p>El reconocido presentador pez de noticias informa en vivo desde el estudio sobre los acontecimientos más relevantes de la jornada.</p>
+            </article>
+            <hr>
+            <article>
+                <h3>Segunda Noticia</h3>
+                <p>Detalles sobre otro acontecimiento importante...</p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Compartir mi Noticia</h3>
+            <form id="form-noticia" action="#" method="POST">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="tu@email.com" required>
+
+                <label for="tema">Selecciona tema:</label>
+                <select id="tema" name="tema">
+                    <option>Noticias Generales</option>
+                    <option>Deportes</option>
+                    <option>Cocina</option>
+                </select>
+
+                <label for="titulo">Título de la Noticia:</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Ej: Evento en la comunidad" required>
+
+                <label for="autor">Tu Nombre / Autor:</label>
+                <input type="text" id="autor" name="autor" placeholder="Ej: Juan Pérez" required>
+
+                <label for="contenido">Contenido de la Noticia:</label>
+                <textarea id="contenido" name="contenido" placeholder="Escribe aquí la noticia..." required></textarea>
+
+                <button type="submit">Publicar Noticia</button>
+            </form>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The New York Times Company. Todos los derechos reservados por perez linares valentin / 5°I / 0619.</p>
+    </footer>
+
+</body>
+</html>
